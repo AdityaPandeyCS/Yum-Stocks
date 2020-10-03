@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="35dp">
+
+                    <TextView
+                        android:id="@+id/detail_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/detail_imageUrl"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                style="@style/label" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_text_size" />
+
+            <TextView
+                android:id="@+id/detail_companyTypes_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Types"
+                style="@style/label" />
+
+            <TextView
+                android:id="@+id/detail_companyTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_text_size" />
+
+            <TextView
+                android:id="@+id/detail_allTimeHigh_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Time High"
+                style="@style/label" />
+
+            <TextView
+                android:id="@+id/detail_allTimeHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_text_size" />
+
+            <TextView
+                android:id="@+id/detail_address_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                style="@style/label" />
+
+            <TextView
+                android:id="@+id/detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_text_size"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="openInMaps" />
+
+            <TextView
+                android:id="@+id/detail_website_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                style="@style/label" />
+
+            <TextView
+                android:id="@+id/detail_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_text_size"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="goToWebsite" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

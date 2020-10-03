@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="label_text_size">12sp</dimen>
+    <dimen name="content_text_size">18sp</dimen>
+    <dimen name="label_top_margin">5dp</dimen>
+    <dimen name="change_left_margin">5dp</dimen>
+    <dimen name="ticker_title_size">25sp</dimen>
+    <dimen name="ticker_subtitle_size">18sp</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:layout_marginTop">@dimen/label_top_margin</item>
+    </style>
+
+    <style name="ticker_title">
+        <item name="android:textSize">@dimen/ticker_title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ticker_subtitle">
+        <item name="android:textSize">@dimen/ticker_subtitle_size</item>
+    </style>
+
+</resources>
